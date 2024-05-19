@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hello-scss{
+    color: green;
+    background-color: aliceblue;
+    .specials{
+        color: azure;
+        background-color: red;
+    }
+}
