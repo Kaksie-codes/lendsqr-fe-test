@@ -1,0 +1,93 @@
+.sign-in{
+    background-color: $white;
+    height: 100vh;
+    width: 100vw; 
+
+    .container{
+        height: 100%;  
+        position: relative; 
+        
+        .logo{
+            position: absolute;
+            top: 50px;
+            left: 0;
+            width: 150px;
+        }       
+
+        .content{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            height: 100%;
+            width: 100%;            
+            align-items: center;
+            margin: 0 auto;
+
+            .content-right{
+                width: 100%;
+                max-width: 600px;
+                margin-inline: auto;
+                
+            }
+
+            h1{
+                color: $dark-grey;
+                font-size: 40px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+
+            .sub-text{
+                margin-bottom: 50px;
+            }
+
+            .sub-text2{
+                margin-bottom: 10px;
+                font-weight: 600;
+                font-size: 12px;
+                color: $green;
+            }
+
+            .hero-img{
+                width: 600px;
+                display: none;
+            }
+           
+        }
+    }
+
+   
+    .login-btn{
+        background-color: $green;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+        width: 100%;
+        position: relative;       
+        height: 48px;
+        color: white;
+        font-weight: 600;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sign-in{ 
+        .container{
+            .content{                
+                grid-template-columns: repeat(2, 1fr);                              
+                
+                .content-right{
+                    width: 100%;
+                    max-width: 447px;                                  
+                }           
+                
+                .hero-img{
+                    width: 100%;
+                    max-width: 600px;
+                    display: block;
+                }               
+            }
+        }    
+    }         
+}
